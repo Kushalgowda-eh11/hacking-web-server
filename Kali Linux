@@ -28,10 +28,21 @@ PORT     STATE SERVICE
 8180/tcp open  unknown
 MAC Address: 00:0C:29:40:58:70 (VMware)
 
-Nmap done: 1 IP address (1 host up) scanned in 1.03 seconds
-
-In the nmap scan we can see to http websites (80/tcp & 8180/tcp).
 This 2 are websites to check we can type the ip address and type collen80 or 8180 in the firefox.
 For example: 192.168.17.136:80 / 192.168.17.136:8180
 Now  we have to hack this to http web sites.
 Do nmap scan of port 80 , 8180.
+
+Nmap done: 1 IP address (1 host up) scanned in 1.03 seconds
+
+In the nmap scan we can see to http websites (80/tcp & 8180/tcp).
+nmap 192.168.-.-. -p80,8180 -sV
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-01-11 23:46 EST
+Nmap scan report for 192.168.18.134
+Host is up (0.00069s latency).
+
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+8180/tcp open  http    Apache Tomcat/Coyote JSP engine 1.1
+MAC Address: 00:0C:29:40:58:70 (VMware)
+
